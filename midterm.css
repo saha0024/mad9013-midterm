@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding:0;
+	margin:0;
+}	
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+	background-color: #666;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #000;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: cursive;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: serif;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: serif;
+	color: #494949;	
+}
+p, p2, p3, li, a{
+	font-weight: 400;
+	font-family: sans-serif;
+	color: #555;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+  
+  
+}
+
+p2{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+    
+
+}
+    
+p3{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+    line-height: 1xp;
+ }
+
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color: #fff;	
+}
+.masthead{
+	
+}
+.nav{
+	
+}
+.navbar{
+	
+}
+.main{
+	
+}
+.sidebar{
+	
+}
+.footer{
+	
+}
+
+@media all and (min-width: 500px){
+  .two, .three{
+    float: left;
+    width: 50%;
+      
+  }
+}
+
+@media all and (min-width: 800px){
+  .main, .two, .three{
+    float:left;
+    height: 1400px;
+       
+    /* do not do this in production sites */
+  }
+  .main{
+    width: 40%;
+  }
+  .two, .three{
+    width: 30%;
+  }
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+	width: 240px;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background-color: #e4e4e4;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #333;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #e4e4e4;
+  display: block;	
+  overflow: hidden; 
+    clear: both;
+}
+
+
+@media screen and (min-width: 400px){
+  
+  /* -- Navigation Items -- */
+  .navbar li{
+    width: 50%; 
+  }
+  
+}
+
+@media screen and (min-width: 650px){
+
+  /* -- Navigation Items -- */
+  .navbar li{
+    width: 25%; 
+  }
+  
+}
+
+
+@media screen and (min-width: 1080px){
+  
+  /* -- Navigation Container -- */
+  .navbar{
+    width:260px;
+  }
+  
+  /* -- Navigation Items -- */
+  .navbar li{
+    float: left;
+    width: 100%; 
+      
+  }
+  
+  /* -- Navigation Anchors -- */
+  .navbar a{
+   text-align: left; 
+  }
+     .main, .two, .three{
+    float:left;
+    height: 1400px;
+     
+    /* do not do this in production sites */
+  }
+  .main{
+    width: 30%;
+  }
+  .two, .three{
+    width: 20%;
+  }
+  
+}
+
+
+
+@media all and (min-width: 499xp){
+  .two, .three{
+    float: left;
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 500xp){
+  .one, .two, .three{
+    float:left;
+    height: 1400px;
+      padding: 5px 5px; 
+      
+    /* do not do this in production sites */
+  }
+  .main{
+    width: 40%;
+  }
+  .two, .three{
+    width: 30%;
+  }
+}
